@@ -1,0 +1,66 @@
+{
+  "name": "storybook",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "start:fresh": "rm -rf $TMPDIR/metro-* && rm -rf $TMPDIR/haste-map-* && yarn && yarn start --reset-cache",
+    "start:superfresh": "watchman watch-del-all && rm -rf node_modules && yarn start:fresh",
+    "postinstall": "ts-node scripts/postinstall-silence-metro-require-warn.ts",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "storybook": "start-storybook -p 7007",
+    "storybook:setup": "ts-node src/setup-stories.ts",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-native": "0.64.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/runtime": "^7.14.6",
+    "@react-native-community/eslint-config": "^3.0.0",
+    "@storybook/addon-actions": "^5.3",
+    "@storybook/addon-knobs": "^5.3",
+    "@storybook/addon-links": "^5.3",
+    "@storybook/addon-ondevice-actions": "^5.3.23",
+    "@storybook/addon-ondevice-knobs": "^5.3.25",
+    "@storybook/react-native": "^5.3.25",
+    "@storybook/react-native-server": "^5.3.23",
+    "@types/jest": "^26.0.23",
+    "@types/react-native": "^0.64.10",
+    "@types/react-test-renderer": "^17.0.1",
+    "@types/storybook__addon-knobs": "^5.2.1",
+    "@types/storybook__react-native": "^5.2.1",
+    "@typescript-eslint/parser": "^4.28.1",
+    "babel-jest": "^27.0.6",
+    "babel-loader": "^8.2.2",
+    "chalk": "^4.1.1",
+    "eslint": "^7.29.0",
+    "graceful-fs": "^4.2.6",
+    "jest": "^27.0.6",
+    "metro-react-native-babel-preset": "^0.66.0",
+    "path": "^0.12.7",
+    "react-dom": "17.0.2",
+    "react-test-renderer": "17.0.2",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.5"
+  },
+  "resolutions": {
+    "@types/react": "^17"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}

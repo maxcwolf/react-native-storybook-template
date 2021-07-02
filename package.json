@@ -1,0 +1,9 @@
+{
+  "name": "@maxcwolf/react-native-storybook-template",
+  "version": "0.1.0",
+  "description": "React Native CLI Storybook Playground Template",
+  "repository": "git@github.com:maxcwolf/react-native-storybook-template.git",
+  "author": "Max Wolf <maxcharleswolf@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {}
+}
