@@ -12,8 +12,10 @@
 
 ## :arrow_forward: Usage
 
+> I have only published to github, but the RN-CLI does not allow namespaced packages... I will publish directly to NPM in the future. For now, the command below using the repo URL works fine.
+
 ```sh
-npx react-native init Storybook --template @maxcwolf/react-native-storybook-template
+npx react-native init Storybook --template https://github.com/maxcwolf/react-native-storybook-template
 ```
 
 ### Note on the legacy CLI
