@@ -5,5 +5,8 @@
   "repository": "git@github.com:maxcwolf/react-native-storybook-template.git",
   "author": "Max Wolf <maxcharleswolf@gmail.com>",
   "license": "MIT",
-  "devDependencies": {}
+  "devDependencies": {},
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  }
 }
